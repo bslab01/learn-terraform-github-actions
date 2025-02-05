@@ -28,6 +28,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "test_s3_bucket" {
+  count = 1
   bucket = "my-test-bucket-bsns-001"
   acl    = "private"
 
