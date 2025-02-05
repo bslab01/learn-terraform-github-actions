@@ -28,12 +28,12 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "test_s3_bucket" {
-  count = 1
+  count = 0
   bucket = "my-test-bucket-bsns-001"
   acl    = "private"
 
   tags = {
-    Name        = "my-test-bucket-bsns-002"
+    Name        = "my-test-bucket-bsns-003"
     Environment = "Dev"
   }
 }
